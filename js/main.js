@@ -2,7 +2,8 @@ const projects = [
 	{ index: 0, id: 'homeItem', anchor: 'home' },
 	{ index: 1, id: 'louItem', anchor: 'lou' },
 	{ index: 2, id: 'shelfieItem', anchor: 'shelfie' },
-	{ index: 3, id: 'melilloItem', anchor: 'melillo' }
+	{ index: 3, id: 'melilloItem', anchor: 'melillo' },
+	{ index: 4, id: 'vidvisionItem', anchor: 'vidvision' }
 ]
 
 var currentProject = projects[0]

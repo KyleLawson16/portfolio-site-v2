@@ -17,7 +17,7 @@ $slider-duration: 400ms;
 		.item {
 			.item-bar {
 				width: 2px;
-				height: 100px;
+				height: 60px;
 				margin-top: 10px;
 				margin-bottom: 10px;
 				margin-left: auto;
@@ -27,7 +27,7 @@ $slider-duration: 400ms;
 				transition-timing-function: ease-in;
 				rect {
 					width: 2px;
-					height: 100px;
+					height: 60px;
 					fill: $line-color;
 					transition-duration: $slider-duration;
 					transition-timing-function: ease-in;
@@ -81,10 +81,10 @@ $slider-duration: 400ms;
 		}
 		.item.active {
 			.item-bar {
-				height: 80px;
+				height: 40px;
 				transition-timing-function: ease-out;
 				rect {
-					height: 80px;
+					height: 40px;
 					transition-timing-function: ease-out;
 				}
 			}
@@ -131,7 +131,7 @@ $slider-duration: 400ms;
 .middle-bar {
 	position: fixed;
 	top: 0;
-	right: 50px;
+	right: 70px;
 	width: 100vw;
 	height: 100vh;
 	display: flex;

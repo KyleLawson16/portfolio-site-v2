@@ -130,7 +130,7 @@
   z-index: 9999; }
   .slider .items .item .item-bar {
     width: 2px;
-    height: 100px;
+    height: 60px;
     margin-top: 10px;
     margin-bottom: 10px;
     margin-left: auto;
@@ -140,7 +140,7 @@
     transition-timing-function: ease-in; }
     .slider .items .item .item-bar rect {
       width: 2px;
-      height: 100px;
+      height: 60px;
       fill: #999;
       transition-duration: 400ms;
       transition-timing-function: ease-in; }
@@ -186,10 +186,10 @@
     transition-duration: 400ms;
     transition-timing-function: ease-in; }
   .slider .items .item.active .item-bar {
-    height: 80px;
+    height: 40px;
     transition-timing-function: ease-out; }
     .slider .items .item.active .item-bar rect {
-      height: 80px;
+      height: 40px;
       transition-timing-function: ease-out; }
   .slider .items .item.active .item-box {
     width: 60px;
@@ -227,7 +227,7 @@
 .middle-bar {
   position: fixed;
   top: 0;
-  right: 50px;
+  right: 70px;
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -496,6 +496,13 @@ canvas {
   height: 0px;
   margin-bottom: 70px;
   margin-top: -70px; }
+
+#down-arrow {
+  margin-left: auto;
+  margin-right: auto;
+  width: 50px;
+  margin-top: 150px;
+  margin-bottom: -150px; }
 
 #name {
   font-family: 'Lato', sans-serif;
