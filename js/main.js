@@ -98,3 +98,16 @@ var scrollStop = function(callback) {
 	scrolling = false
 	return scrolling
 }
+
+var camera, renderer, plane;
+
+window.addEventListener( 'resize', onWindowResize, false );
+
+function onWindowResize(){
+
+    camera.aspect = window.innerWidth / window.innerHeight;
+    camera.updateProjectionMatrix();
+
+    renderer.setSize( window.innerWidth, window.innerHeight );
+
+}

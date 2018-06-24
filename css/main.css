@@ -227,7 +227,7 @@
 .middle-bar {
   position: fixed;
   top: 0;
-  right: 70px;
+  right: 60px;
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -286,8 +286,7 @@
   left: 0px;
   right: 0;
   bottom: 0;
-  z-index: 999;
-  animation: onPageLoad 3s; }
+  z-index: 999; }
 
 .mountains-range .mountain {
   right: 100px;
@@ -435,8 +434,14 @@ body {
   background-color: #011132;
   margin: 0px;
   top: 0;
-  overflow: hidden; }
+  overflow: hidden;
+  animation: fadeInOnLoad 3s ease-in; }
 
+@keyframes fadeInOnLoad {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
 h1 {
   font-family: 'Archivo', serif; }
 
