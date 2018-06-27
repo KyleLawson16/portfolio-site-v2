@@ -53,7 +53,7 @@
           </a>
         </div>
       </div>
-      <div id="louItem" class="item">
+      <div id="louItem" class="item below">
         <svg class="item-bar">
           <rect  />
         </svg>
@@ -92,7 +92,7 @@
           </a>
         </div>
       </div>
-      <div id="vidvisionItem" class="item" style="margin-bottom: 40px;">
+      <div id="vidvisionItem" class="item">
         <svg class="item-bar">
           <rect  />
         </svg>
@@ -108,6 +108,7 @@
     </div>
   </div>
 
+  <svg id="down-arrow-svg" onClick="onDownArrowClick()" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60 67.52"><defs><filter id="luminosity-invert" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feColorMatrix values="-1 0 0 0 1 0 -1 0 0 1 0 0 -1 0 1 0 0 0 1 0"/></filter><mask id="mask" x="10" y="7" width="11" height="35" maskUnits="userSpaceOnUse"><g class="cls-9"><g transform="translate(-72 -93)"><use transform="translate(82 100)" xlink:href="#image"/></g></g></mask><image id="image" width="11" height="35" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAjCAIAAADNMWcqAAAACXBIWXMAAAsSAAALEgHS3X78AAABMUlEQVQ4T72SwXLDIAxEF4OIIZNM/v8rc0iMCAJ6ICU246Q9dLoXM5rnZSUE/IdUPxHRPM9aawAiEmNMKQEwnXDOXS4Xay0AZr5eryPhvT+fz4fDodY6TdOyLK3+JI7H4+l08t7P8ywiIkJEG8J775xzzllrtdbMPE3ThjDGEBERGWMAaK078fwopaaVlHr1+CRqrbXWhnZtCBHJOZdSOjp6hBBSSiLSoB3idrvd7/eUUs55sHlNrI2hX9ShF1G+BWDfY/h1xwOrnn/22M/RqjlnAOueN0RPuk+UUnLOIgJARNr6YJjH4/Gw1pZSmJmZR4KZY4xEVGtdlmXcMQAhhBBCW61+BYZ5tHcB0PLuEC2sUuotUVd6S3x6uV8RLQc+JM05xxjboRc1tmqDb7uIP9MXMug57lxGeHcAAAAASUVORK5CYII="/><mask id="mask-2" x="38" y="7" width="11" height="35" maskUnits="userSpaceOnUse"><g class="cls-9"><g transform="translate(-72 -93)"><use transform="translate(110 100)" xlink:href="#image"/></g></g></mask><image id="image-2" width="25" height="49" xlink:href="data:image/png;base64,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"/></defs><title>down-arrow-2</title><g class="cls-1"><g id="Layer_1" data-name="Layer 1"><path class="engine" d="M86,133.28c.63-.61,3.29-.55,4,0s0,3.12,0,3.12H86S85.37,133.88,86,133.28Z" transform="translate(-72 -93)"/><path class="engine" d="M118,133.28c-.62-.61-3.29-.55-4,0s0,3.12,0,3.12h4S118.66,133.88,118,133.28Z" transform="translate(-72 -93)"/><polygon class="body" points="30 65.08 2 45.48 2 43.41 5.22 40.2 16 45.1 30 38.57 30 36.36 15.99 42.9 4.78 37.8 0 42.59 0 46.52 30 67.52 30 65.08"/><polygon class="body" points="30 65.08 58 45.48 58 43.41 54.78 40.2 43.99 45.1 30 38.57 30 36.36 44.01 42.9 55.22 37.8 60 42.59 60 46.52 30 67.52 30 65.08"/><use class="cls-3" transform="translate(3 0)" xlink:href="#image-2"/><path class="cls-4" d="M87,133c0-4.26-4-27-1-30,.71-.71,3.37-.78,4,0,2.67,3.31-1,25.75-1,30" transform="translate(-72 -93)"/><g class="cls-5"><g class="cls-6"><path class="cls-7" d="M87,133c0-4.26-4-27-1-30,.71-.71,3.37-.78,4,0,2.67,3.31-1,25.75-1,30" transform="translate(-72 -93)"/></g></g><use class="cls-3" transform="translate(31 0)" xlink:href="#image-2"/><path class="cls-4" d="M115,133c0-4.26-4-27-1-30,.71-.71,3.37-.78,4,0,2.67,3.31-1,25.75-1,30" transform="translate(-72 -93)"/><g class="cls-8"><g class="cls-6"><path class="cls-7" d="M115,133c0-4.26-4-27-1-30,.71-.71,3.37-.78,4,0,2.67,3.31-1,25.75-1,30" transform="translate(-72 -93)"/></g></g></g></g></svg>
 
   <!-- MOUNTAINS -->
   <div class="mountains">
@@ -168,7 +169,7 @@
     <div class="name-container">
       <h1 id="name">Kyle Lawson</h1>
       <h3 id="personal-title">Entrepreneur, Developer, Mountaineer</h3>
-      <img id="down-arrow" src="../img/down-arrow.svg" />
+
     </div>
   </div>
 

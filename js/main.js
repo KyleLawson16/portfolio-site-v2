@@ -13,6 +13,9 @@ var itemElements = document.getElementsByClassName('item')
 var projectElements = document.getElementsByClassName('project-container')
 
 function onItemClick(x) {
+	if (x == 0) {
+		document.getElementById('down-arrow-svg').classList.remove('blastoff')
+	}
 	for (var i = 0; i < itemElements.length; i++) {
 		itemElements[i].classList.remove('active')
 	}
@@ -21,6 +24,9 @@ function onItemClick(x) {
 	}
 	document.getElementById(projects[x].id).classList.add('active')
 	document.getElementById(projects[x].anchor).classList.add('active')
+	document.getElementById(projects[x].anchor).scrollIntoView({
+		behavior: 'smooth'
+	})
 	currentProject = projects[projects[x].index]
 	return currentProject
 }
@@ -28,9 +34,6 @@ function onItemClick(x) {
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 	anchor.addEventListener('click', function(e) {
 		e.preventDefault()
-		document.querySelector(this.getAttribute('href')).scrollIntoView({
-			behavior: 'smooth'
-		})
 	})
 })
 
@@ -99,15 +102,20 @@ var scrollStop = function(callback) {
 	return scrolling
 }
 
-var camera, renderer, plane;
+var camera, renderer, plane
 
-window.addEventListener( 'resize', onWindowResize, false );
+window.addEventListener('resize', onWindowResize, false)
 
-function onWindowResize(){
+function onWindowResize() {
+	camera.aspect = window.innerWidth / window.innerHeight
+	camera.updateProjectionMatrix()
 
-    camera.aspect = window.innerWidth / window.innerHeight;
-    camera.updateProjectionMatrix();
+	renderer.setSize(window.innerWidth, window.innerHeight)
+}
 
-    renderer.setSize( window.innerWidth, window.innerHeight );
-
+function onDownArrowClick() {
+	document.getElementById('down-arrow-svg').classList.add('blastoff')
+	setTimeout(function() {
+		onItemClick(1)
+	}, 800)
 }

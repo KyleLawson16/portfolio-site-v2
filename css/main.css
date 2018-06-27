@@ -31,7 +31,8 @@
         left: 0;
         width: 100%;
         height: 100%;
-        box-shadow: 0px 0px 20px 0px #111; }
+        box-shadow: 0px 0px 20px 0px #111;
+        z-index: 99999; }
         .projects .project-container .project-shadow .project img {
           width: 99%;
           padding: 0.5%; }
@@ -502,12 +503,80 @@ canvas {
   margin-bottom: 70px;
   margin-top: -70px; }
 
-#down-arrow {
-  margin-left: auto;
-  margin-right: auto;
-  width: 50px;
-  margin-top: 150px;
-  margin-bottom: -150px; }
+#down-arrow-svg {
+  position: absolute;
+  bottom: 100px;
+  left: 50vw;
+  transform: translateX(-40px);
+  width: 80px;
+  z-index: 9999; }
+  #down-arrow-svg .body {
+    transition-duration: 800ms;
+    fill: #999; }
+  #down-arrow-svg .engine {
+    transition-duration: 800ms;
+    fill: #999; }
+  #down-arrow-svg .cls-1 {
+    isolation: isolate; }
+  #down-arrow-svg .cls-2 {
+    fill: #999; }
+  #down-arrow-svg .cls-3 {
+    opacity: 0; }
+  #down-arrow-svg .cls-3,
+  #down-arrow-svg .cls-6 {
+    mix-blend-mode: screen; }
+  #down-arrow-svg .cls-4 {
+    display: none; }
+  #down-arrow-svg .cls-5 {
+    mask: url(#mask); }
+  #down-arrow-svg .cls-6 {
+    opacity: 0.85; }
+  #down-arrow-svg .cls-7 {
+    display: none; }
+  #down-arrow-svg .cls-8 {
+    mask: url(#mask-2); }
+  #down-arrow-svg .cls-9 {
+    filter: url(#luminosity-invert); }
+
+#down-arrow-svg:hover {
+  cursor: pointer; }
+  #down-arrow-svg:hover .body {
+    transition-duration: 800ms;
+    fill: #fff; }
+  #down-arrow-svg:hover .engine {
+    transition-duration: 800ms;
+    fill: #09c2db; }
+
+.blastoff {
+  animation: blastoff 3s ease-in; }
+  .blastoff .body {
+    transition-duration: 800ms;
+    fill: #fff; }
+  .blastoff .engine {
+    transition-duration: 800ms;
+    fill: #09c2db; }
+  .blastoff .cls-1 {
+    isolation: isolate; }
+  .blastoff .cls-2 {
+    fill: #999; }
+  .blastoff .cls-3 {
+    transition-duration: 800ms;
+    opacity: 0.75 !important; }
+  .blastoff .cls-3,
+  .blastoff .cls-6 {
+    mix-blend-mode: screen; }
+  .blastoff .cls-4 {
+    display: none; }
+  .blastoff .cls-5 {
+    mask: url(#mask); }
+  .blastoff .cls-6 {
+    opacity: 0.85; }
+  .blastoff .cls-7 {
+    display: none; }
+  .blastoff .cls-8 {
+    mask: url(#mask-2); }
+  .blastoff .cls-9 {
+    filter: url(#luminosity-invert); }
 
 #name {
   font-family: 'Lato', sans-serif;
@@ -537,5 +606,10 @@ canvas {
     background-position: 325px 0; }
   100% {
     background-position: 325px 0; } }
+@-webkit-keyframes blastoff {
+  0% {
+    bottom: 100px; }
+  100% {
+    bottom: -1500px; } }
 
 /*# sourceMappingURL=main.css.map */
