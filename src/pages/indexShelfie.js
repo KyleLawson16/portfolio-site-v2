@@ -1,1 +1,1 @@
-import '../sass/main.scss'
+import '../sass/pages/shelfie.scss'

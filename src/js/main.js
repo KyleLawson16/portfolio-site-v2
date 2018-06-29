@@ -12,7 +12,7 @@ var scrolling = false
 var itemElements = document.getElementsByClassName('item')
 var projectElements = document.getElementsByClassName('project-container')
 
-function onItemClick(x) {
+window.onItemClick = function(x) {
 	if (x == 0) {
 		document.getElementById('down-arrow-svg').classList.remove('blastoff')
 	}
@@ -41,7 +41,7 @@ window.onbeforeunload = function() {
 	window.scrollTo(0, 0)
 }
 
-function init() {
+window.init = function() {
 	// for mouse scrolling in Firefox
 	var elem = document.body
 	if (elem.addEventListener) {
@@ -102,18 +102,7 @@ var scrollStop = function(callback) {
 	return scrolling
 }
 
-var camera, renderer, plane
-
-window.addEventListener('resize', onWindowResize, false)
-
-function onWindowResize() {
-	camera.aspect = window.innerWidth / window.innerHeight
-	camera.updateProjectionMatrix()
-
-	renderer.setSize(window.innerWidth, window.innerHeight)
-}
-
-function onDownArrowClick() {
+window.onDownArrowClick = function() {
 	document.getElementById('down-arrow-svg').classList.add('blastoff')
 	setTimeout(function() {
 		onItemClick(1)

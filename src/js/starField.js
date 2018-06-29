@@ -7,7 +7,8 @@ function randRange(minNum, maxNum) {
 }
 
 // function to generate drops
-function createStarField() {
+window.createStarField = function() {
+	var i = 1
 	for (i = 1; i < numStars; i++) {
 		var starLeft = randRange(0, 1600)
 		var starTop = randRange(-10, 700)
@@ -42,5 +43,3 @@ function createStarField() {
 		star.style.animationDelay = starAnimationDelay + 's'
 	}
 }
-// Make it rain
-createStarField()
