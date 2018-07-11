@@ -1,5 +1,5 @@
-# Portfolio Website
+# My New Portfolio Website
 
-To start server run: python -m SimpleHTTPServer 8000
+To start server run: npm start
 
-To compile sass run: sass --watch ./sass/main.scss:./css/main.css
+To compile for production run: npm run build:prod

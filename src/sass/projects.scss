@@ -172,3 +172,6 @@ $animation-timing: 0.3s;
 		border-color: $line-color;
 	}
 }
+
+@import './media-querries/1050/projects.scss';
+@import './media-querries/650/projects.scss';

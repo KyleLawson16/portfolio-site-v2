@@ -7,7 +7,8 @@ module.exports = {
 		'build/projects/lou': './src/pages/indexLou.js',
 		'build/projects/melillo': './src/pages/indexMelillo.js',
 		'build/projects/shelfie': './src/pages/indexShelfie.js',
-		'build/projects/vidvision': './src/pages/indexVidvision.js'
+		'build/projects/vidvision': './src/pages/indexVidvision.js',
+		'build/projects/house-in-motion': './src/pages/indexHouseInMotion.js'
 	},
 	output: {
 		path: path.resolve(__dirname, 'dist'),

@@ -1,0 +1,33 @@
+@media screen and (max-width: 1050px) {
+	.name-container {
+		width: 70vw;
+	}
+
+	#personal-title {
+		width: 70vw;
+		font-size: 4vw;
+		margin-top: -30px;
+		margin-bottom: 30px;
+	}
+
+	#name {
+		width: 70vw;
+		font-size: 12vw;
+		padding-bottom: 1vw;
+	}
+
+	@-webkit-keyframes slidetounlock {
+		0% {
+			background-position: -35vw 0;
+		}
+		32% {
+			background-position: -35vw 0;
+		}
+		70% {
+			background-position: 35vw 0;
+		}
+		100% {
+			background-position: 35vw 0;
+		}
+	}
+}

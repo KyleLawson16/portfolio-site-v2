@@ -17,7 +17,7 @@ $slider-duration: 400ms;
 		.item {
 			.item-bar {
 				width: 2px;
-				height: 60px;
+				height: 40px;
 				margin-top: 10px;
 				margin-bottom: 10px;
 				margin-left: auto;
@@ -27,7 +27,7 @@ $slider-duration: 400ms;
 				transition-timing-function: ease-in;
 				rect {
 					width: 2px;
-					height: 60px;
+					height: 40px;
 					fill: $line-color;
 					transition-duration: $slider-duration;
 					transition-timing-function: ease-in;
@@ -81,10 +81,10 @@ $slider-duration: 400ms;
 		}
 		.item.active {
 			.item-bar {
-				height: 40px;
+				height: 20px;
 				transition-timing-function: ease-out;
 				rect {
-					height: 40px;
+					height: 20px;
 					transition-timing-function: ease-out;
 				}
 			}
@@ -131,7 +131,7 @@ $slider-duration: 400ms;
 .middle-bar {
 	position: fixed;
 	top: 0;
-	right: 60px;
+	right: 50px;
 	width: 100vw;
 	height: 100vh;
 	display: flex;
@@ -200,3 +200,5 @@ $slider-duration: 400ms;
 		opacity: 0;
 	}
 }
+
+@import './media-querries/1050/slider.scss';

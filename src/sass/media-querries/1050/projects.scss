@@ -1,0 +1,23 @@
+@media screen and (max-width: 1050px) {
+	.projects {
+		.project-container {
+			.project-shadow {
+				margin-left: 20px;
+			}
+			.project-text {
+				width: 35vw;
+				position: absolute;
+				left: 55vw;
+				margin-left: 20px;
+				padding: 20px;
+				h1 {
+					font-size: 6vw;
+					margin-top: 10vh;
+				}
+				.content {
+					justify-content: flex-start;
+				}
+			}
+		}
+	}
+}
