@@ -14,7 +14,7 @@ var itemElements = document.getElementsByClassName('item')
 var projectElements = document.getElementsByClassName('project-container')
 
 window.onLoad = function() {
-	window.scrollTo(0, 1)
+	document.body.requestFullscreen()
 }
 
 window.onItemClick = function(x) {
@@ -148,21 +148,21 @@ function handleTouchMove(evt) {
 	} else {
 		if (yDiff > 0) {
 			project = document.getElementById(
-				projects[currentProject.index - 1].anchor
-			)
-			project.scrollIntoView({
-				behavior: 'smooth'
-			})
-			currentProject = projects[currentProject.index - 1]
-			onItemClick(currentProject.index)
-		} else {
-			project = document.getElementById(
 				projects[currentProject.index + 1].anchor
 			)
 			project.scrollIntoView({
 				behavior: 'smooth'
 			})
 			currentProject = projects[currentProject.index + 1]
+			onItemClick(currentProject.index)
+		} else {
+			project = document.getElementById(
+				projects[currentProject.index - 1].anchor
+			)
+			project.scrollIntoView({
+				behavior: 'smooth'
+			})
+			currentProject = projects[currentProject.index - 1]
 			onItemClick(currentProject.index)
 		}
 	}
