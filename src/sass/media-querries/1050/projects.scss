@@ -1,6 +1,8 @@
 @media screen and (max-width: 1050px) {
 	.projects {
 		.project-container {
+			opacity: 1;
+			animation: none;
 			.project-shadow {
 				margin-left: 20px;
 			}
@@ -18,6 +20,10 @@
 					justify-content: flex-start;
 				}
 			}
+		}
+		.active {
+			animation: none;
+			opacity: 1;
 		}
 	}
 }

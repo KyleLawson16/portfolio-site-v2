@@ -140,17 +140,17 @@ $slider-duration: 400ms;
 	z-index: 0;
 	.bar-container {
 		height: 2px;
-		width: 100%;
+		width: 100vw;
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
 		.bar {
-			width: 50%;
+			width: 100vw;
 			height: 2px;
 			svg {
-				width: 100%;
+				width: 100vw;
 				rect {
-					width: 100%;
+					width: 100vw;
 					height: 2px;
 					fill: $line-color;
 				}

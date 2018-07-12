@@ -10,8 +10,8 @@ function randRange(minNum, maxNum) {
 window.createStarField = function() {
 	var i = 1
 	for (i = 1; i < numStars; i++) {
-		var starLeft = randRange(0, 1600)
-		var starTop = randRange(-10, 700)
+		var starLeft = randRange(0, 100)
+		var starTop = randRange(-1, 90)
 		var starSize = randRange(1, 4)
 		var starBrightness = Math.random() / 2 + 0.5
 		var starGlowSize = randRange(0, 10)
@@ -26,8 +26,8 @@ window.createStarField = function() {
 		newStar.setAttribute('class', 'star')
 		document.body.appendChild(newStar)
 		var star = document.getElementById(starId)
-		star.style.left = starLeft + 'px'
-		star.style.top = starTop + 'px'
+		star.style.left = starLeft + 'vw'
+		star.style.top = starTop + 'vh'
 		star.style.width = starSize + 'px'
 		star.style.height = starSize + 'px'
 		star.style.opacity = starBrightness
