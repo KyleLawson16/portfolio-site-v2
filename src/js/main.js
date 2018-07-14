@@ -157,23 +157,27 @@ function handleTouchMove(evt) {
 		}
 	} else {
 		if (yDiff > 0) {
-			project = document.getElementById(
-				projects[currentProject.index - 1].anchor
-			)
-			project.scrollIntoView({
-				behavior: 'smooth'
-			})
-			currentProject = projects[currentProject.index - 1]
-			onItemClick(currentProject.index)
+			if (currentProject.index < 5) {
+				project = document.getElementById(
+					projects[currentProject.index + 1].anchor
+				)
+				project.scrollIntoView({
+					behavior: 'smooth'
+				})
+				currentProject = projects[currentProject.index + 1]
+				onItemClick(currentProject.index)
+			}
 		} else {
-			project = document.getElementById(
-				projects[currentProject.index + 1].anchor
-			)
-			project.scrollIntoView({
-				behavior: 'smooth'
-			})
-			currentProject = projects[currentProject.index + 1]
-			onItemClick(currentProject.index)
+			if (currentProject.index > 0) {
+				project = document.getElementById(
+					projects[currentProject.index - 1].anchor
+				)
+				project.scrollIntoView({
+					behavior: 'smooth'
+				})
+				currentProject = projects[currentProject.index - 1]
+				onItemClick(currentProject.index)
+			}
 		}
 	}
 	/* reset values */
