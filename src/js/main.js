@@ -66,12 +66,6 @@ window.init = function() {
 function mouseScroll(event) {
 	window.clearTimeout(isScrolling)
 
-	// Set a timeout to run after scrolling ends
-	isScrolling = setTimeout(function() {
-		// Run the callback
-		scrollStop()
-	}, 30)
-	var rolled = 0
 	if ('wheelDelta' in event) {
 		rolled = event.wheelDelta
 	} else {
@@ -80,24 +74,40 @@ function mouseScroll(event) {
 		rolled = -40 * event.detail
 	}
 
+	// Set a timeout to run after scrolling ends
+	isScrolling = setTimeout(function() {
+		// Run the callback
+		if (rolled < 50 && rolled > -50) {
+			scrollStop()
+		}
+	}, 25)
+
 	let project
 	console.log(scrolling, rolled)
-	if (rolled < -50 && scrolling === false) {
-		project = document.getElementById(projects[currentProject.index + 1].anchor)
-		project.scrollIntoView({
-			behavior: 'smooth'
-		})
-		scrolling = true
-		currentProject = projects[currentProject.index + 1]
-		onItemClick(currentProject.index)
-	} else if (rolled > 50 && scrolling === false) {
-		project = document.getElementById(projects[currentProject.index - 1].anchor)
-		project.scrollIntoView({
-			behavior: 'smooth'
-		})
-		scrolling = true
-		currentProject = projects[currentProject.index - 1]
-		onItemClick(currentProject.index)
+	if (rolled < -80 && scrolling === false) {
+		if (currentProject.index < 5) {
+			project = document.getElementById(
+				projects[currentProject.index + 1].anchor
+			)
+			project.scrollIntoView({
+				behavior: 'smooth'
+			})
+			scrolling = true
+			currentProject = projects[currentProject.index + 1]
+			onItemClick(currentProject.index)
+		}
+	} else if (rolled > 80 && scrolling === false) {
+		if (currentProject.index > 0) {
+			project = document.getElementById(
+				projects[currentProject.index - 1].anchor
+			)
+			project.scrollIntoView({
+				behavior: 'smooth'
+			})
+			scrolling = true
+			currentProject = projects[currentProject.index - 1]
+			onItemClick(currentProject.index)
+		}
 	}
 	return scrolling
 }

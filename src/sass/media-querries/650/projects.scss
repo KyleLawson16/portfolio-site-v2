@@ -15,10 +15,10 @@
 			animation: unactivateProject $animation-timing linear;
 			animation-timing-function: ease-in;
 			.project-shadow {
-				width: 46vh * 1.2;
-				height: 46vh;
-				max-width: 95vw;
-				max-height: calc(95vw / 1.2);
+				width: 44vh * 1.2;
+				height: 44vh;
+				max-width: 92vw;
+				max-height: calc(92vw / 1.2);
 				border-radius: 40vh;
 				margin-left: 0px;
 				margin-top: 2vh;
@@ -50,7 +50,7 @@
 				text-align: center;
 				h1 {
 					font-size: 6vw;
-					margin-top: 12vh;
+					margin-top: 18vh;
 					margin-bottom: 0px;
 				}
 				p {
