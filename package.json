@@ -1,36 +1,36 @@
 {
-	"name": "portfolio",
-	"version": "1.0.0",
-	"description": "To start server run: python -m SimpleHTTPServer 8000",
-	"private": true,
-	"scripts": {
-		"start": "webpack-dev-server --hot --inline --mode=development",
-		"build-dev": "webpack --mode=development",
-		"build-prod": "webpack --mode=production"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/KyleLawson16/portfolio-site-v2.git"
-	},
-	"keywords": [],
-	"author": "",
-	"license": "ISC",
-	"bugs": {
-		"url": "https://github.com/KyleLawson16/portfolio-site-v2/issues"
-	},
-	"homepage": "https://github.com/KyleLawson16/portfolio-site-v2#readme",
-	"devDependencies": {
-		"babel-core": "^6.26.3",
-		"babel-loader": "^7.1.4",
-		"css-loader": "^0.28.11",
-		"file-loader": "^1.1.11",
-		"html-webpack-plugin": "^3.2.0",
-		"node-sass": "^4.9.0",
-		"sass-loader": "^7.0.3",
-		"style-loader": "^0.21.0",
-		"webpack": "^4.13.0",
-		"webpack-cli": "^3.0.8",
-		"webpack-dev-server": "^3.1.4",
-		"webpack-hot-middleware": "^2.22.2"
-	}
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "To start server run: python -m SimpleHTTPServer 8000",
+  "private": true,
+  "scripts": {
+    "start": "webpack-dev-server --watch-poll --progress --inline --mode=development",
+    "build-dev": "webpack --mode=development",
+    "build-prod": "webpack --mode=production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KyleLawson16/portfolio-site-v2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KyleLawson16/portfolio-site-v2/issues"
+  },
+  "homepage": "https://github.com/KyleLawson16/portfolio-site-v2#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "css-loader": "^0.28.11",
+    "file-loader": "^1.1.11",
+    "html-webpack-plugin": "^3.2.0",
+    "node-sass": "^4.9.0",
+    "sass-loader": "^7.0.3",
+    "style-loader": "^0.21.0",
+    "webpack": "^4.13.0",
+    "webpack-cli": "^3.0.8",
+    "webpack-dev-server": "^3.1.4",
+    "webpack-hot-middleware": "^2.22.2"
+  }
 }

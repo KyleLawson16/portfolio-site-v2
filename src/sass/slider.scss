@@ -1,204 +1,203 @@
-@import 'variables.scss';
+@import "variables.scss";
 
 $beam-color: rgb(255, 255, 0);
 $slider-duration: 400ms;
 
 .slider {
-	position: fixed;
-	right: 0;
-	top: 0;
-	height: 100vh;
-	width: 100px;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	z-index: 9999;
-	.items {
-		.item {
-			.item-bar {
-				width: 2px;
-				height: 40px;
-				margin-top: 10px;
-				margin-bottom: 10px;
-				margin-left: auto;
-				margin-right: auto;
-				display: block;
-				transition-duration: $slider-duration;
-				transition-timing-function: ease-in;
-				rect {
-					width: 2px;
-					height: 40px;
-					fill: $line-color;
-					transition-duration: $slider-duration;
-					transition-timing-function: ease-in;
-				}
-			}
-			.item-box {
-				width: 20px;
-				height: 20px;
-				margin-left: auto;
-				margin-right: auto;
-				display: block;
-				transition-duration: $slider-duration;
-				transition-timing-function: ease-in;
-				rect {
-					width: 20px;
-					height: 20px;
-					stroke-width: 4px;
-					stroke: $line-color;
-					fill: transparent;
-					transition-duration: $slider-duration;
-					transition-timing-function: ease-in;
-				}
-			}
-			img {
-				top: 0;
-				width: 0px;
-				height: 0px;
-				border-radius: 50%;
-				margin-top: -10px;
-				margin-bottom: 20px;
-				margin-left: auto;
-				margin-right: auto;
-				display: block;
-				transition-duration: $slider-duration;
-				transition-timing-function: ease-in;
-			}
-			#home-icon {
-				width: 28px;
-				height: 28px;
-				border-radius: 0px;
-				margin-left: auto;
-				margin-right: auto;
-				display: block;
-				margin-top: 0px;
-				margin-bottom: 0px;
-				stroke: $line-color;
-				stroke-width: 1.6px;
-				transition-duration: $slider-duration;
-				transition-timing-function: ease-in;
-			}
-		}
-		.item.active {
-			.item-bar {
-				height: 20px;
-				transition-timing-function: ease-out;
-				rect {
-					height: 20px;
-					transition-timing-function: ease-out;
-				}
-			}
-			.item-box {
-				width: 60px;
-				height: 60px;
-				margin-left: auto;
-				margin-right: auto;
-				display: block;
-				transition-timing-function: ease-out;
-				rect {
-					width: 60px;
-					height: 60px;
-					stroke-width: 4px;
-					stroke: $line-color;
-					transition-timing-function: ease-out;
-				}
-			}
-			img {
-				width: 64px;
-				height: 63px;
-				margin-top: -60px;
-				margin-bottom: 10px;
-				border-radius: 0px;
-				transition-timing-function: ease-out;
-			}
-			#home-icon {
-				width: 50px;
-				height: 50px;
-				border-radius: 0px;
-				margin-left: auto;
-				margin-right: auto;
-				display: block;
-				margin-top: 0px;
-				margin-bottom: 0px;
-				stroke: white;
-				stroke-width: 1.1px;
-				transition-timing-function: ease-out;
-			}
-		}
-	}
+  position: fixed;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 9999;
+  .items {
+    .item {
+      .item-bar {
+        width: 2px;
+        height: 40px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        transition-duration: $slider-duration;
+        transition-timing-function: ease-in;
+        rect {
+          width: 2px;
+          height: 40px;
+          fill: $line-color;
+          transition-duration: $slider-duration;
+          transition-timing-function: ease-in;
+        }
+      }
+      .item-box {
+        width: 20px;
+        height: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        transition-duration: $slider-duration;
+        transition-timing-function: ease-in;
+        rect {
+          width: 20px;
+          height: 20px;
+          stroke-width: 4px;
+          stroke: $line-color;
+          fill: transparent;
+          transition-duration: $slider-duration;
+          transition-timing-function: ease-in;
+        }
+      }
+      img {
+        top: 0;
+        width: 0px;
+        height: 0px;
+        border-radius: 50%;
+        margin-top: -10px;
+        margin-bottom: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        transition-duration: $slider-duration;
+        transition-timing-function: ease-in;
+      }
+      #home-icon {
+        width: 28px;
+        height: 28px;
+        border-radius: 0px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        stroke: $line-color;
+        stroke-width: 1.6px;
+        transition-duration: $slider-duration;
+        transition-timing-function: ease-in;
+      }
+    }
+    .item.active {
+      .item-bar {
+        height: 20px;
+        transition-timing-function: ease-out;
+        rect {
+          height: 20px;
+          transition-timing-function: ease-out;
+        }
+      }
+      .item-box {
+        width: 60px;
+        height: 60px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        transition-timing-function: ease-out;
+        rect {
+          width: 60px;
+          height: 60px;
+          stroke-width: 4px;
+          stroke: $line-color;
+          transition-timing-function: ease-out;
+        }
+      }
+      img {
+        width: 64px;
+        height: 63px;
+        margin-top: -60px;
+        margin-bottom: 10px;
+        border-radius: 0px;
+        transition-timing-function: ease-out;
+      }
+      #home-icon {
+        width: 50px;
+        height: 50px;
+        border-radius: 0px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        stroke: white;
+        stroke-width: 1.1px;
+        transition-timing-function: ease-out;
+      }
+    }
+  }
 }
 
 .middle-bar {
-	position: fixed;
-	top: 0;
-	right: 50px;
-	width: 100vw;
-	height: 100vh;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	z-index: 0;
-	.bar-container {
-		height: 2px;
-		width: 100vw;
-		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
-		.bar {
-			width: 100vw;
-			height: 2px;
-			svg {
-				width: 100vw;
-				rect {
-					width: 100vw;
-					height: 2px;
-					fill: $line-color;
-				}
-			}
-		}
-		.beam {
-			width: 34px;
-			height: 2px;
-			margin-top: -7px;
-			position: absolute;
-			right: 100vw;
-			animation: slideRight 2.5s;
-			animation-timing-function: ease-in-out;
-			animation-iteration-count: infinite;
-			opacity: 0.9;
-			img {
-				height: 12px;
-			}
-		}
-		#beam2 {
-			animation-delay: 0.5s;
-		}
-	}
+  position: fixed;
+  top: 0;
+  right: 100px;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 0;
+  .bar-container {
+    height: 2px;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    .bar {
+      width: 100vw;
+      height: 2px;
+      svg {
+        width: 100vw;
+        rect {
+          width: 100vw;
+          height: 2px;
+          fill: $line-color;
+        }
+      }
+    }
+    .beam {
+      width: 34px;
+      height: 2px;
+      margin-top: -7px;
+      position: absolute;
+      right: 100vw;
+      animation: slideRight 2.5s;
+      animation-timing-function: ease-in-out;
+      opacity: 0.9;
+      img {
+        height: 12px;
+      }
+    }
+    #beam2 {
+      animation-delay: 0.5s;
+    }
+  }
 }
 
 .middle-bar-full {
-	right: 0px;
+  right: 0px;
 }
 
 @keyframes slideRight {
-	from {
-		right: 100vw;
-	}
-	to {
-		right: 0px;
-	}
+  from {
+    right: 100vw;
+  }
+  to {
+    right: 0px;
+  }
 }
 
 @keyframes fadeOut {
-	0% {
-		opacity: 1;
-	}
-	90% {
-		opacity: 1;
-	}
-	100% {
-		opacity: 0;
-	}
+  0% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
-@import './media-querries/1050/slider.scss';
+@import "./media-querries/1050/slider.scss";
