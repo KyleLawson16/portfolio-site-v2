@@ -1,4 +1,19 @@
-@import '../variables.scss';
-@import '../main.scss';
-@import '../slider.scss';
-@import '../header.scss';
+@import "../variables.scss";
+@import "../main.scss";
+@import "../company.scss";
+@import "../stars.scss";
+
+#hubspot-animation {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 1.7vw;
+}
+
+.icon {
+  width: 150px;
+}
+.icon-cont {
+  display: flex;
+  justify-content: space-around;
+}

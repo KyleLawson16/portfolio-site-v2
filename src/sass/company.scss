@@ -1,0 +1,48 @@
+.company-info {
+  margin-top: 100px;
+  text-align: center;
+  img {
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .title {
+    color: white;
+    font-size: 26px;
+  }
+}
+
+.section-padding {
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+  .company-section {
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    .center {
+      text-align: center;
+    }
+    .title {
+      color: white;
+      font-size: 40px;
+    }
+    p {
+      font-size: 22px;
+      line-height: 32px;
+    }
+    .column-cont {
+      display: flex;
+      flex: 1;
+      height: 100%;
+      .column {
+        flex: 1;
+      }
+    }
+    .section-spacer {
+      width: 100%;
+      height: 150px;
+    }
+  }
+}

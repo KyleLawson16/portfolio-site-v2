@@ -1,5 +1,4 @@
 // number of drops created.
-var numStars = 50;
 
 // function to generate a random number range.
 function randRange(minNum, maxNum) {
@@ -7,7 +6,7 @@ function randRange(minNum, maxNum) {
 }
 
 // function to generate drops
-window.createStarField = function() {
+window.createStarField = function(numStars) {
   var i = 1;
   for (i = 1; i < numStars; i++) {
     var starLeft = randRange(0, 100);

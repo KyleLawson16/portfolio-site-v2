@@ -2,7 +2,6 @@ body {
   background-color: $background-color;
   margin: 0px;
   top: 0;
-  overflow: hidden;
   overflow-x: hidden;
   animation: fadeInOnLoad 2s ease-in;
 }
@@ -18,6 +17,10 @@ body {
 h1 {
   font-family: "Archivo", serif;
 }
+h3 {
+  font-family: "Lato", serif;
+  font-weight: 300;
+}
 p {
   font-family: "Lato", serif;
   font-weight: 300;
@@ -25,4 +28,11 @@ p {
 a {
   font-family: "Lato", serif;
   font-weight: 400;
+}
+
+.white {
+  color: white;
+}
+.center {
+  text-align: center;
 }
